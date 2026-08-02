@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sábanas - Blancos M&M</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos específicos para la sección del catálogo de sábanas */
+        .catalog-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-img-wrapper {
+            width: 100%;
+            height: 250px;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            background: #ffffff;
+            margin-top: auto;
+        }
+
+        .product-info h3 {
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Tarjeta especial de aviso en caja */
+        .notice-card {
+            background: #fdfdfd;
+            border: 2px dashed #2980b9;
+            border-radius: 8px;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 250px;
+        }
+
+        .notice-card h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+   <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="image_222a88.jpg" alt="Blancos M&M" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Botón del menú desplegable (Menú Hamburguesa) -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menú de Navegación -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    
+                    <!-- Submenú Plegable para Productos -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-btn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="sabanas.html">Sábanas</a></li>
+                            <li><a href="edredones.html">Edredones</a></li>
+                            <li><a href="almohadas.html">Almohadas</a></li>
+                            <li><a href="cortinas.html">Cortinas</a></li>
+                            <li><a href="toallas.html">Toallas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="Catalogos.html">Catálogos PDF</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <!-- SECCIÓN PRINCIPAL / ESLOGAN DE SÁBANAS CON FONDO PERSONALIZADO -->
+    <section class="hero hero-sabanas">
+        <h2>"Lo mejor en sábanas y comodidad a buenos precios."</h2>
+    </section>
+
+    <main class="catalog-container">
+        <h2 class="section-title">Modelos Disponibles</h2>
+        
+        <div class="catalog-grid">
+            
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="image_1fadd1.png" alt="Sábanas con diseño geométrico" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Suave</p>
+                        <p><strong>Medidas:</strong> Ind / Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20las%20Sábanas%20Geométricas" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Sábanas con diseño geométrico</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="image_1fae09.jpg" alt="Juego de Sábanas de Polar Térmico" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Polar Térmico</p>
+                        <p><strong>Medidas:</strong> Mat / QN</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20las%20Sábanas%20Polar%20Térmico" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas de Polar Térmico</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="image_1fae2b.jpg" alt="Juego de Sábanas de Satín" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Satín Sedoso</p>
+                        <p><strong>Medidas:</strong> Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20las%20Sábanas%20de%20Satín" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas de Satín</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="image_1fae69.png" alt="Juego de Sábanas de Algodón" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> 100% Algodón</p>
+                        <p><strong>Medidas:</strong> Ind / Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20las%20Sábanas%20de%20Algodón" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas de Algodón</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="image_1fb1ea.png" alt="Juego de Sábanas de Algodón Premium" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Algodón Percal</p>
+                        <p><strong>Medidas:</strong> Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20las%20Sábanas%20de%20Algodón%20Premium" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas de Algodón</h3>
+                </div>
+            </div>
+
+            <!-- Nuevas imágenes agregadas -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.0.png" alt="Juego de Sábanas Modelo 1.0" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Ultra Soft</p>
+                        <p><strong>Medidas:</strong> Ind / Mat / QN</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.0" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.0</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.1.png" alt="Juego de Sábanas Modelo 1.1" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Ultra Soft</p>
+                        <p><strong>Medidas:</strong> Ind / Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.1" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.1</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.2.png" alt="Juego de Sábanas Modelo 1.2" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Ultra Soft</p>
+                        <p><strong>Medidas:</strong> Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.2" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.2</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.3.png" alt="Juego de Sábanas Modelo 1.3" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Algodón Confort</p>
+                        <p><strong>Medidas:</strong> Ind / Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.3" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.3</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.4.png" alt="Juego de Sábanas Modelo 1.4" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Ultra Soft</p>
+                        <p><strong>Medidas:</strong> Mat / QN</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.4" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.4</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.5.png" alt="Juego de Sábanas Modelo 1.5" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Algodón Confort</p>
+                        <p><strong>Medidas:</strong> Ind / Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.5" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.5</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="sabana 1.6.png" alt="Juego de Sábanas Modelo 1.6" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Ultra Soft</p>
+                        <p><strong>Medidas:</strong> Mat / QN / KS</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Sábana%20Modelo%201.6" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Juego de Sábanas Modelo 1.6</h3>
+                </div>
+            </div>
+
+            <div class="notice-card">
+                <h2>Preguntar en caja por el de su agrado</h2>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Sobre Nosotros</h4>
+                <p>En <strong>Blancos M&M</strong> ofrecemos la mejor línea de blancos, almohadas y complementos para garantizar el descanso y confort que te mereces.</p>
+            </div>
+           <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><strong>Ubicación:</strong> Circuito General Felipe Ángeles, Ruta 17 N.° 2, Manzana 214, Lote 14.</p>
+                <p><strong>Horarios:</strong></p>
+                <p style="padding-left: 10px; font-size: 0.9rem; color: #bdc3c7;">• Lunes a Viernes: 12:00 PM a 8:00 PM</p>
+                <p style="padding-left: 10px; font-size: 0.9rem; color: #bdc3c7; margin-bottom: 10px;">• Sábados: 12:00 PM a 6:00 PM</p>
+                <p><strong>Canal de Atención vía whatsapp:</strong> <a href="https://wa.me/525545143265" target="_blank">55 4514 3265</a></p>
+            </div>
+        </div>
+       <div class="footer-bottom">
+            <p>&copy; 2026 Blancos M&M. Todos los derechos reservados. | <strong><a href="privacidad.html" style="color: #ffffff; text-decoration: underline;">Aviso de Privacidad</a></strong></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/525545143265" class="whatsapp-floating-btn" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-icon"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+</body>
+</html>
