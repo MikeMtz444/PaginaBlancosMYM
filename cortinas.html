@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cortinas - Blancos M&M</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        /* Estilos específicos para la sección del catálogo de cortinas */
+        .catalog-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .product-card {
+            background: #ffffff;
+            border: 1px solid #eaeaea;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .product-img-wrapper {
+            width: 100%;
+            height: 250px;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+            background: #ffffff;
+            margin-top: auto;
+        }
+
+        .product-info h3 {
+            font-size: 1.1rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* Tarjeta especial de aviso en caja */
+        .notice-card {
+            background: #fdfdfd;
+            border: 2px dashed #2980b9;
+            border-radius: 8px;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: 250px;
+        }
+
+        .notice-card h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+   <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="image_222a88.jpg" alt="Blancos M&M" class="logo-img">
+                </a>
+            </div>
+
+            <!-- Botón del menú desplegable (Menú Hamburguesa) -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Menú de Navegación -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    
+                    <!-- Submenú Plegable para Productos -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-btn">Productos ▾</a>
+                        <ul class="dropdown-content">
+                            <li><a href="sabanas.html">Sábanas</a></li>
+                            <li><a href="edredones.html">Edredones</a></li>
+                            <li><a href="almohadas.html">Almohadas</a></li>
+                            <li><a href="cortinas.html">Cortinas</a></li>
+                            <li><a href="toallas.html">Toallas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="Catalogos.html">Catálogos PDF</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <!-- SECCIÓN PRINCIPAL / ESLOGAN DE CORTINAS CON FONDO PERSONALIZADO -->
+    <section class="hero hero-cortinas">
+        <h2>"Viste tus ventanas con elegancia y control de luz ideal."</h2>
+    </section>
+
+    <main class="catalog-container">
+        <h2 class="section-title">Modelos Disponibles</h2>
+        
+        <div class="catalog-grid">
+            
+            <!-- Cortinas 1 a 15 -->
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 1.png" alt="Cortina Modelo 1" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Terciopelo</p>
+                        <p><strong>Control de Luz:</strong> 90% Bloqueo</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%201" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 1</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 2.png" alt="Cortina Modelo 2" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Lino Transparente / Tergal</p>
+                        <p><strong>Control de Luz:</strong> Filtrado Suave</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%202" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 2</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 3.png" alt="Cortina Modelo 3" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Texturizado Semi Poliester</p>
+                        <p><strong>Control de Luz:</strong> 70% Bloqueo</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%203" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 3</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 4.png" alt="Cortina Modelo 4" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Poliéster Acolchado</p>
+                        <p><strong>Control de Luz:</strong> Térmica / Aislante</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%204" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 4</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 5.png" alt="Cortina Modelo 5" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Elegance</p>
+                        <p><strong>Control de Luz:</strong> Caída Fluida / Media</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%205" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 5</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 6.png" alt="Cortina Modelo 6" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Luz Parcial</p>
+                        <p><strong>Control de Luz:</strong> 100% Bloqueo UV</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%206" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 6</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 7.png" alt="Cortina Modelo 7" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Lino Natural Moderno</p>
+                        <p><strong>Control de Luz:</strong> Filtrado Natural</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%207" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 7</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 8.png" alt="Cortina Modelo 8" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Jacquard Estampado</p>
+                        <p><strong>Control de Luz:</strong> Semi-Blackout</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%208" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 8</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 9.png" alt="Cortina Modelo 9" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Tergal Francés Tradicional</p>
+                        <p><strong>Control de Luz:</strong> Difusa / Traslúcida</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%209" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 9</h3>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 11.png" alt="Cortina Modelo 11" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Poliéster Liso Confort</p>
+                        <p><strong>Control de Luz:</strong> Filtrado Medio</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%2011" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 11</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 12.png" alt="Cortina Modelo 12" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Blackout Texturizado</p>
+                        <p><strong>Control de Luz:</strong> 95% Bloqueo</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%2012" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 12</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 13.png" alt="Cortina Modelo 13" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Microfibra Satín</p>
+                        <p><strong>Control de Luz:</strong> Caída Ligeramente Brilante</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%2013" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 13</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 14.png" alt="Cortina Modelo 14" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Lino Rústico Elegante</p>
+                        <p><strong>Control de Luz:</strong> Filtrado Natural Calidez</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%2014" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 14</h3>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img-wrapper">
+                    <img src="cortina 15.png" alt="Cortina Modelo 15" class="product-img">
+                    <div class="product-overlay">
+                        <p><strong>Material:</strong> Satin Doble Vista</p>
+                        <p><strong>Control de Luz:</strong> 100% Bloqueo Térmico</p>
+                        <a href="https://wa.me/525545143265?text=Hola,%20me%20interesa%20información%20de%20la%20Cortina%20Modelo%2015" target="_blank" class="btn-ws-card">Pide la tuya por WhatsApp</a>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Cortina Modelo 15</h3>
+                </div>
+            </div>
+
+            <div class="notice-card">
+                <h2>Preguntar en caja por el de su agrado</h2>
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Sobre Nosotros</h4>
+                <p>En <strong>Blancos M&M</strong> ofrecemos la mejor línea de blancos, almohadas y complementos para garantizar el descanso y confort que te mereces.</p>
+            </div>
+           <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><strong>Ubicación:</strong> Circuito General Felipe Ángeles, Ruta 17 N.° 2, Manzana 214, Lote 14.</p>
+                <p><strong>Horarios:</strong></p>
+                <p style="padding-left: 10px; font-size: 0.9rem; color: #bdc3c7;">• Lunes a Viernes: 12:00 PM a 8:00 PM</p>
+                <p style="padding-left: 10px; font-size: 0.9rem; color: #bdc3c7; margin-bottom: 10px;">• Sábados: 12:00 PM a 6:00 PM</p>
+                <p><strong>Canal de Atención vía whatsapp:</strong> <a href="https://wa.me/525545143265" target="_blank">55 4514 3265</a></p>
+            </div>
+        </div>
+       <div class="footer-bottom">
+            <p>&copy; 2026 Blancos M&M. Todos los derechos reservados. | <strong><a href="privacidad.html" style="color: #ffffff; text-decoration: underline;">Aviso de Privacidad</a></strong></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/525545143265" class="whatsapp-floating-btn" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="whatsapp-icon"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+</body>
+</html>
